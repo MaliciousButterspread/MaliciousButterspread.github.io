@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    /* background: #e6e6e6; */
+    background: #ffffff
+}
+.header {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 0;
+}
+.menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* GRID 50/50*/
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left {
+    padding: 30px;
+    border-right: 2px solid black;
+}
+.category {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.item {
+    margin-bottom: 30px;
+}
+.big {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: left;
+    /* maybe add a slider thing or idk */
+
+}
+.small {
+    font-size: 32px;
+    text-align: left;
+}
+.right {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    text-align: left;
+    grid-auto-rows: auto;
+}
+.recipe-header,
+.ingredients,
+.things_2,
+.tools {
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+.recipe-title {
+    font-size: 48px;
+    font-weight: bold;
+    /* align-items: start; */
+    text-align:left;
+    margin-left: -0.2rem;
+}
+.top-labels {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+/* ing around 9-10 ALIGNED LEFT */
+.ingredients {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    font-size: 24px;
+    margin-top:0.5rem;
+}
+.list {
+    padding-left: 0;
+}
+.list div {
+    /* margin-bottom: 5px; */
+    margin-bottom:10px;
+}
+/* ALIGNED LEFT */
+.serving {
+    /* font-weight: bold; */
+    text-align: left;
+    align-items: start;
+    font-size:32px;
+    margin-left: 0.1rem;
+}
+/* DO NOT TOUCH FIXED ALIGNMENT LEFT*/
+.things_2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-weight: bold;
+    align-items: start;
+    font-size: 36px;
+    margin-bottom: 0; 
+}
+.tools {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    font-size: 24px;
+    margin-top: 0;
+}
+.time {
+    /* font-weight: bold; */
+    text-align: left;
+    /* align-items: start; */
+}
+.menu-btn {
+    cursor: pointer;
+}
+.recipe-btn {
+    cursor: pointer;
+}
+.menu-btn:hover,
+.recipe-btn:hover {
+    opacity: 0.1;
+    /* opacity: 0.5; */
+}
+/* abt */
+.about-container {
+    padding: 80px;
+}
+.about-title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about-sub {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.about-text {
+    font-size: 24px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+.about-link {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* haw */
+.how-container {
+    padding: 80px;
+}
+.step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin-bottom: 50px;
+}
+.num {
+    font-size: 48px;
+    font-weight: bold;
+}
+.text {
+    font-size: 24px;
+    max-width: 600px;
+}
+.myface {
+    width: 100%;
+    height: auto;
+}
+.abtpage .left {
+    border-right: none;
+}
+.abtpage .recipe-header,
+.abtpage .ingredients,
+.abtpage .things_2,
+.abtpage .tools {
+    border-bottom: none;
+}
+.abt-title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.abtruready {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    margin-top:-0.5rem;
+    cursor: pointer;
+}
+.abtruready:hover {
+    opacity: 0.1;
+}
+.haw-text {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.6;
+    padding: 120px 80px;
+}
+.hawruready {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.haw-page .left {
+    border-right: none;
+}
+.haw-page .recipe-header,
+.haw-page .ingredients,
+.haw-page .things_2,
+.haw-page .tools {
+    border-bottom: none;
+}
+.hawruready {
+    cursor: pointer;
+}
+.hawruready:hover {
+    opacity: 0.3;
+}
+.recipepagetitle {
+    text-align: center;
+    font-size: 120px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+.recipepagecont {
+    width: 90%;
+    margin: 0 auto;
+}
+.step {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 100px;
+}
+.stepleft {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: start;
+}
+.stepnum {
+    font-size: 64px;
+    font-weight: bold;
+}
+.steptext {
+    font-size: 32px;
+    line-height: 1.5;
+}
+.stepnote {
+    font-size: 20px;
+}
+.stepright {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.stepright img {
+    width: 45%;
+}
+/* #rotate1 {
+    transform: rotate(90deg);
+    margin-top:3.51rem;
+    width: 60%;
+} */
+
+#tirafinal {
+    width: 92%;
+    height: auto;
+}
